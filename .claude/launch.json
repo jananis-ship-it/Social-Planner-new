@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "blogs-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix=/Users/jan/Desktop/My-projects/blogs"],
+      "port": 3000
+    },
+    {
+      "name": "pipeline-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix=/Users/jan/Desktop/My-projects/pipeline"],
+      "port": 3001
+    }
+  ]
+}
