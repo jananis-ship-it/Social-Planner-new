@@ -471,135 +471,142 @@
               <h2 style="font-size:16px;font-weight:600;margin-bottom:4px;" class="text-gray-900">Everything you need to manage social</h2>
               <p style="font-size:14px;font-weight:500;" class="text-gray-500">Powerful features designed for modern marketers</p>
             </div>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid grid-cols-4 gap-4">
 
-              <!-- Feature 1: Bulk scheduling — phone mockup + real product thumb + 20+ badge -->
-              <div class="feature-card" style="padding:16px;--accent:#3b82f6;display:flex;flex-direction:column;">
-                <div style="height:160px;background:#eef2f7;border-radius:8px;margin-bottom:12px;overflow:hidden;position:relative;">
-                  <!-- small product thumbnail bottom-left -->
-                  <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=120&q=80&auto=format&fit=crop" alt="" style="position:absolute;left:16px;bottom:22px;width:62px;height:62px;object-fit:cover;border-radius:8px;border:2.5px solid white;z-index:3;box-shadow:0 2px 8px rgba(0,0,0,0.18);"/>
-                  <!-- 20+ badge -->
-                  <div style="position:absolute;left:58px;bottom:72px;background:#1d1d1d;color:white;font-size:9px;font-weight:700;padding:2px 7px;border-radius:12px;z-index:4;border:1.5px solid white;letter-spacing:0.3px;">20+</div>
-                  <!-- curved arrow svg -->
-                  <svg style="position:absolute;left:72px;bottom:52px;width:56px;height:44px;z-index:3;" viewBox="0 0 56 44" fill="none">
-                    <path d="M4 40 Q12 10 46 10" stroke="#9ca3af" stroke-width="1.5" fill="none" stroke-dasharray="3,2.5"/>
-                    <path d="M42 7 L47 11 L42 15" stroke="#9ca3af" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Card 1: Bulk scheduling — phone UI + product thumbnail + 20+ badge -->
+              <div style="background:#f0f2f7;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;">
+                <div style="position:relative;height:220px;background:#eaecf4;display:flex;align-items:center;justify-content:center;">
+                  <!-- product thumb bottom-left with 20+ badge -->
+                  <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=120&q=80&auto=format&fit=crop" alt="" style="position:absolute;left:16px;bottom:20px;width:68px;height:68px;object-fit:cover;border-radius:12px;border:2.5px solid white;z-index:3;box-shadow:0 3px 10px rgba(0,0,0,0.2);"/>
+                  <div style="position:absolute;left:64px;bottom:76px;background:#111827;color:white;font-size:9px;font-weight:700;padding:3px 8px;border-radius:20px;z-index:4;border:1.5px solid white;">20+</div>
+                  <!-- curved arrow -->
+                  <svg style="position:absolute;left:88px;bottom:54px;width:60px;height:50px;z-index:3;" viewBox="0 0 60 50" fill="none">
+                    <path d="M4 44 Q14 8 52 12" stroke="#9ca3af" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                    <path d="M48 9 L54 13 L48 17" stroke="#9ca3af" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                   <!-- phone frame -->
-                  <div style="position:absolute;left:50%;transform:translateX(-50%);top:6px;width:114px;height:148px;background:white;border-radius:14px;border:1.5px solid #d1d5db;overflow:hidden;z-index:2;box-shadow:0 6px 18px rgba(0,0,0,0.13);">
-                    <div style="background:#f9fafb;padding:7px 9px;border-bottom:1px solid #f3f4f6;display:flex;align-items:center;gap:5px;">
-                      <div style="width:16px;height:16px;border-radius:50%;background:#3b82f6;flex-shrink:0;"></div>
-                      <div style="height:3.5px;width:44px;background:#e2e8f0;border-radius:2px;"></div>
+                  <div style="width:118px;height:200px;background:white;border-radius:16px;border:1.5px solid #d1d5db;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.13);margin-left:28px;margin-top:-10px;">
+                    <!-- top bar -->
+                    <div style="background:#f9fafb;padding:8px 10px;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;gap:5px;">
+                      <div style="width:16px;height:16px;border-radius:50%;background:#6366f1;flex-shrink:0;"></div>
+                      <div style="height:3px;width:46px;background:#e2e8f0;border-radius:2px;"></div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=240&q=80&auto=format&fit=crop" alt="" style="width:100%;height:78px;object-fit:cover;display:block;"/>
-                    <div style="padding:7px 9px 5px;">
-                      <div style="height:3px;background:#e2e8f0;border-radius:2px;margin-bottom:5px;width:82%;"></div>
-                      <div style="height:3px;background:#e2e8f0;border-radius:2px;width:58%;"></div>
+                    <!-- placeholder image area with icon -->
+                    <div style="background:#f0f2f7;height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;">
+                      <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#9ca3af" stroke-width="1.5"/><path d="M3 15l4-4 4 4 3-3 4 4" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.5" fill="#9ca3af"/></svg>
+                      <div style="font-size:7px;color:#9ca3af;text-align:center;padding:0 8px;line-height:1.3;">Make your post stand out with photos or a video or a GIF</div>
                     </div>
-                    <div style="display:flex;gap:8px;padding:5px 9px;border-top:1px solid #f3f4f6;">
-                      <div style="height:3px;width:22px;background:#bfdbfe;border-radius:2px;"></div>
-                      <div style="height:3px;width:22px;background:#bbf7d0;border-radius:2px;"></div>
-                      <div style="height:3px;width:22px;background:#fde68a;border-radius:2px;"></div>
+                    <!-- caption lines -->
+                    <div style="padding:8px 10px 6px;">
+                      <div style="height:3px;background:#e2e8f0;border-radius:2px;margin-bottom:5px;width:85%;"></div>
+                      <div style="height:3px;background:#e2e8f0;border-radius:2px;width:62%;"></div>
+                    </div>
+                    <!-- stats row -->
+                    <div style="display:flex;gap:6px;padding:5px 10px;border-top:1px solid #f3f4f6;align-items:center;">
+                      <div style="height:3px;width:18px;background:#bfdbfe;border-radius:2px;"></div>
+                      <div style="font-size:6px;color:#9ca3af;">1,295</div>
+                      <div style="height:3px;width:18px;background:#bbf7d0;border-radius:2px;"></div>
+                      <div style="font-size:6px;color:#9ca3af;">199</div>
                     </div>
                   </div>
                 </div>
-                <div class="mb-3">
-                  <h3 style="font-size:16px;font-weight:600;" class="text-gray-900 leading-tight">Bulk scheduling via CSV</h3>
+                <!-- card text -->
+                <div style="padding:16px;">
+                  <h3 style="font-size:14px;font-weight:600;color:#111827;margin-bottom:6px;">Bulk Scheduling with CSV</h3>
+                  <p style="font-size:12px;color:#6b7280;line-height:1.5;margin-bottom:12px;">Import and schedule multiple posts at once using CSV files for efficient content management</p>
+                  <button style="background:#ede9fe;color:#4f46e5;font-size:12px;font-weight:600;padding:8px 14px;border-radius:20px;border:none;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#ddd6fe'" onmouseout="this.style.background='#ede9fe'">Upload A CSV</button>
                 </div>
-                <p style="font-size:14px;font-weight:400;" class="text-gray-500 leading-relaxed mb-4 line-clamp-2">Perfect for content creators and marketing teams managing multiple campaigns. Supports all major content formats.</p>
-                <button class="text-blue-600 font-semibold text-sm hover:text-blue-700 flex items-center gap-1 transition-colors">
-                  Upload CSV <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                </button>
               </div>
 
-              <!-- Feature 2: Evergreen queue — real lifestyle photos (candles/warm tones) + curved arrow -->
-              <div class="feature-card" style="padding:16px;--accent:#8b5cf6;display:flex;flex-direction:column;">
-                <div style="height:160px;background:#faf5ff;border-radius:8px;margin-bottom:12px;overflow:hidden;position:relative;display:flex;align-items:stretch;">
-                  <!-- left narrow image -->
-                  <img src="https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=200&q=80&auto=format&fit=crop" alt="" style="width:42%;height:160px;object-fit:cover;flex-shrink:0;"/>
-                  <!-- right tall image -->
-                  <img src="https://images.unsplash.com/photo-1603570388-b3abde06f1fa?w=300&q=80&auto=format&fit=crop" alt="" style="width:58%;height:160px;object-fit:cover;"/>
-                  <!-- curved arrow overlay -->
-                  <svg style="position:absolute;top:30px;left:34%;width:32%;height:50px;z-index:2;" viewBox="0 0 80 50" fill="none">
-                    <path d="M10 40 Q40 5 70 40" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
-                    <path d="M66 36 L71 41 L65 44" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Card 2: Evergreen queue — two candle photos + tall lifestyle photo + arrow -->
+              <div style="background:#f5f0eb;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;">
+                <div style="position:relative;height:220px;overflow:hidden;display:flex;gap:2px;">
+                  <!-- left stack: two small photos -->
+                  <div style="display:flex;flex-direction:column;gap:2px;width:42%;flex-shrink:0;">
+                    <img src="https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=200&q=80&auto=format&fit=crop" alt="" style="width:100%;height:109px;object-fit:cover;"/>
+                    <img src="https://images.unsplash.com/photo-1608181831718-c9fca8ee1e71?w=200&q=80&auto=format&fit=crop" alt="" style="width:100%;height:109px;object-fit:cover;"/>
+                  </div>
+                  <!-- right tall photo -->
+                  <img src="https://images.unsplash.com/photo-1603570388b3abde06f1fa?w=300&q=80&auto=format&fit=crop" alt="" style="width:58%;height:220px;object-fit:cover;"/>
+                  <!-- brand bar top-right -->
+                  <div style="position:absolute;top:10px;right:10px;background:white;border-radius:20px;padding:4px 10px;display:flex;align-items:center;gap:5px;box-shadow:0 2px 8px rgba(0,0,0,0.12);z-index:2;">
+                    <div style="width:10px;height:10px;border-radius:50%;background:#8b5cf6;"></div>
+                    <span style="font-size:9px;font-weight:600;color:#374151;">Brand Name</span>
+                  </div>
+                  <!-- curved arrow -->
+                  <svg style="position:absolute;top:28px;left:36%;width:30%;height:44px;z-index:2;" viewBox="0 0 80 44" fill="none">
+                    <path d="M8 36 Q40 2 72 36" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M68 31 L73 37 L67 40" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
-                <div class="mb-3">
-                  <h3 style="font-size:16px;font-weight:600;" class="text-gray-900 leading-tight">Evergreen queue</h3>
+                <div style="padding:16px;">
+                  <h3 style="font-size:14px;font-weight:600;color:#111827;margin-bottom:6px;">Evergreen Queue Post</h3>
+                  <p style="font-size:12px;color:#6b7280;line-height:1.5;margin-bottom:12px;">Create a library of timeless content that automatically recycles to keep your feed fresh</p>
+                  <button style="background:#ede9fe;color:#4f46e5;font-size:12px;font-weight:600;padding:8px 14px;border-radius:20px;border:none;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#ddd6fe'" onmouseout="this.style.background='#ede9fe'">Create Evergreen Post</button>
                 </div>
-                <p style="font-size:14px;font-weight:400;" class="text-gray-500 leading-relaxed mb-4 line-clamp-2">Create a library of timeless content that automatically reposts on your schedule to maximize long-term engagement.</p>
-                <button class="text-blue-600 font-semibold text-sm hover:text-blue-700 flex items-center gap-1 transition-colors">
-                  Create queue <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                </button>
               </div>
 
-              <!-- Feature 3: Recurring posts — two phone frames with real product photo + circular arrow -->
-              <div class="feature-card" style="padding:16px;--accent:#10b981;display:flex;flex-direction:column;">
-                <div style="height:160px;background:#f0fdf4;border-radius:8px;margin-bottom:12px;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;gap:0;">
+              <!-- Card 3: Recurring posts — two phones with serum photo + circular arrow -->
+              <div style="background:#f0f4f2;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;">
+                <div style="position:relative;height:220px;background:#edf2ef;display:flex;align-items:center;justify-content:center;">
                   <!-- left phone -->
-                  <div style="width:110px;height:138px;background:white;border-radius:12px;border:1.5px solid #d1fae5;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,0.10);flex-shrink:0;margin-left:16px;">
-                    <div style="background:#f0fdf4;padding:6px 8px;border-bottom:1px solid #d1fae5;display:flex;align-items:center;gap:4px;">
-                      <div style="width:13px;height:13px;border-radius:50%;background:#10b981;opacity:0.7;flex-shrink:0;"></div>
-                      <div style="height:3px;width:38px;background:#d1fae5;border-radius:2px;"></div>
+                  <div style="width:100px;height:148px;background:white;border-radius:14px;border:1.5px solid #d1d5db;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.12);flex-shrink:0;margin-right:-10px;z-index:1;">
+                    <div style="background:#f9fafb;padding:6px 8px;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;gap:4px;">
+                      <div style="width:13px;height:13px;border-radius:50%;background:#6b7280;flex-shrink:0;"></div>
+                      <div style="height:3px;width:36px;background:#e2e8f0;border-radius:2px;"></div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=220&q=80&auto=format&fit=crop" alt="" style="width:100%;height:88px;object-fit:cover;display:block;"/>
-                    <div style="padding:6px 8px;">
-                      <div style="height:3px;background:#d1fae5;border-radius:2px;margin-bottom:4px;width:78%;"></div>
-                      <div style="height:3px;background:#d1fae5;border-radius:2px;width:55%;"></div>
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=200&q=80&auto=format&fit=crop" alt="" style="width:100%;height:100px;object-fit:cover;display:block;"/>
+                    <div style="padding:5px 8px;">
+                      <div style="height:3px;background:#e5e7eb;border-radius:2px;margin-bottom:4px;width:80%;"></div>
+                      <div style="height:3px;background:#e5e7eb;border-radius:2px;width:55%;"></div>
                     </div>
                   </div>
-                  <!-- circular arrow between phones -->
-                  <svg style="width:48px;height:48px;flex-shrink:0;z-index:2;" viewBox="0 0 48 48" fill="none">
-                    <path d="M24 8 A16 16 0 1 1 8 24" stroke="#10b981" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                    <path d="M20 5 L25 9 L20 13" stroke="#10b981" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- circular arrow -->
+                  <svg style="width:50px;height:50px;flex-shrink:0;z-index:3;" viewBox="0 0 50 50" fill="none">
+                    <path d="M25 8 A17 17 0 1 1 8 25" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M21 5 L26 9 L21 13" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <!-- right phone (slightly offset up) -->
-                  <div style="width:110px;height:138px;background:white;border-radius:12px;border:1.5px solid #d1fae5;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,0.10);flex-shrink:0;margin-right:16px;margin-top:-12px;">
-                    <div style="background:#f0fdf4;padding:6px 8px;border-bottom:1px solid #d1fae5;display:flex;align-items:center;gap:4px;">
-                      <div style="width:13px;height:13px;border-radius:50%;background:#10b981;opacity:0.7;flex-shrink:0;"></div>
-                      <div style="height:3px;width:38px;background:#d1fae5;border-radius:2px;"></div>
+                  <!-- right phone (offset up) -->
+                  <div style="width:100px;height:148px;background:white;border-radius:14px;border:1.5px solid #d1d5db;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.12);flex-shrink:0;margin-left:-10px;margin-top:-20px;z-index:2;">
+                    <div style="background:#f9fafb;padding:6px 8px;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;gap:4px;">
+                      <div style="width:13px;height:13px;border-radius:50%;background:#6b7280;flex-shrink:0;"></div>
+                      <div style="height:3px;width:36px;background:#e2e8f0;border-radius:2px;"></div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=220&q=80&auto=format&fit=crop" alt="" style="width:100%;height:88px;object-fit:cover;display:block;"/>
-                    <div style="padding:6px 8px;">
-                      <div style="height:3px;background:#d1fae5;border-radius:2px;margin-bottom:4px;width:78%;"></div>
-                      <div style="height:3px;background:#d1fae5;border-radius:2px;width:55%;"></div>
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=200&q=80&auto=format&fit=crop" alt="" style="width:100%;height:100px;object-fit:cover;display:block;"/>
+                    <div style="padding:5px 8px;">
+                      <div style="height:3px;background:#e5e7eb;border-radius:2px;margin-bottom:4px;width:80%;"></div>
+                      <div style="height:3px;background:#e5e7eb;border-radius:2px;width:55%;"></div>
                     </div>
                   </div>
                 </div>
-                <div class="mb-3">
-                  <h3 style="font-size:16px;font-weight:600;" class="text-gray-900 leading-tight">Recurring posts</h3>
+                <div style="padding:16px;">
+                  <h3 style="font-size:14px;font-weight:600;color:#111827;margin-bottom:6px;">Recurring Post</h3>
+                  <p style="font-size:12px;color:#6b7280;line-height:1.5;margin-bottom:12px;">Set up posts that automatically repeat on a schedule to maintain consistent engagement</p>
+                  <button style="background:#ede9fe;color:#4f46e5;font-size:12px;font-weight:600;padding:8px 14px;border-radius:20px;border:none;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#ddd6fe'" onmouseout="this.style.background='#ede9fe'">Create Recurring Post</button>
                 </div>
-                <p style="font-size:14px;font-weight:400;" class="text-gray-500 leading-relaxed mb-4 line-clamp-2">Set up recurring content with custom intervals to maintain consistent posting cadence without any manual effort.</p>
-                <button class="text-blue-600 font-semibold text-sm hover:text-blue-700 flex items-center gap-1 transition-colors">
-                  Create recurring post <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                </button>
               </div>
 
-              <!-- Feature 4: RSS feed — real dark product photo + white info card overlay -->
-              <div class="feature-card" style="padding:16px;--accent:#f59e0b;display:flex;flex-direction:column;">
-                <div style="height:160px;border-radius:8px;margin-bottom:12px;overflow:hidden;position:relative;">
-                  <!-- real pottery/ceramics dark photo -->
+              <!-- Card 4: RSS feed — real dark pottery photo + white product card overlay -->
+              <div style="background:#f5f5f5;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;">
+                <div style="position:relative;height:220px;overflow:hidden;">
                   <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80&auto=format&fit=crop" alt="" style="width:100%;height:100%;object-fit:cover;display:block;"/>
-                  <!-- white product info card overlay at bottom -->
-                  <div style="position:absolute;bottom:10px;right:10px;background:white;border-radius:8px;padding:8px 12px;box-shadow:0 4px 16px rgba(0,0,0,0.18);min-width:160px;">
-                    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
-                      <span style="font-size:11px;font-weight:600;color:#111827;">Pottery Set</span>
-                      <span style="font-size:9px;font-weight:700;color:#16a34a;background:#dcfce7;padding:1px 6px;border-radius:4px;">Best Seller</span>
+                  <!-- white product card bottom-right -->
+                  <div style="position:absolute;bottom:12px;right:12px;background:white;border-radius:10px;padding:10px 14px;box-shadow:0 4px 20px rgba(0,0,0,0.22);min-width:155px;">
+                    <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+                      <span style="font-size:11px;font-weight:700;color:#111827;">Pottery Set</span>
+                      <span style="font-size:8px;font-weight:700;color:#16a34a;background:#dcfce7;padding:2px 6px;border-radius:4px;">Best Seller</span>
                     </div>
-                    <div style="display:flex;align-items:center;gap:6px;">
+                    <div style="display:flex;align-items:center;gap:7px;">
                       <span style="font-size:10px;color:#9ca3af;text-decoration:line-through;">$49.99</span>
-                      <span style="font-size:12px;font-weight:700;color:#111827;">$25.99</span>
+                      <span style="font-size:13px;font-weight:700;color:#111827;">$25.99</span>
                     </div>
                   </div>
                 </div>
-                <div class="mb-3">
-                  <h3 style="font-size:16px;font-weight:600;" class="text-gray-900 leading-tight">RSS feed integration</h3>
+                <div style="padding:16px;">
+                  <h3 style="font-size:14px;font-weight:600;color:#111827;margin-bottom:6px;">Generate Feed from RSS Post</h3>
+                  <p style="font-size:12px;color:#6b7280;line-height:1.5;margin-bottom:12px;">Automatically create and share posts from your favorite RSS feeds to stay current</p>
+                  <button style="background:#ede9fe;color:#4f46e5;font-size:12px;font-weight:600;padding:8px 14px;border-radius:20px;border:none;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#ddd6fe'" onmouseout="this.style.background='#ede9fe'">Create RSS Post</button>
                 </div>
-                <p style="font-size:14px;font-weight:400;" class="text-gray-500 leading-relaxed mb-4 line-clamp-2">Connect your RSS feeds and automatically publish new content to keep your audience engaged with the latest updates.</p>
-                <button class="text-blue-600 font-semibold text-sm hover:text-blue-700 flex items-center gap-1 transition-colors">
-                  Create RSS post <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                </button>
               </div>
 
             </div>
