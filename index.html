@@ -474,24 +474,53 @@
             <div class="grid grid-cols-2 gap-5">
               <!-- Feature 1 -->
               <div class="feature-card" style="padding:16px;--accent:#3b82f6;display:flex;flex-direction:column;">
-                <div style="height:120px;background:linear-gradient(135deg, #e8d5c4 0%, #d4a574 50%, #c9945f 100%);border-radius:8px;margin-bottom:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;">
-                  <svg style="width:100%;height:100%;position:absolute;" fill="none" viewBox="0 0 300 180">
+                <!-- Bulk scheduling: phone mockup + thumbnail + 20+ badge -->
+                <div style="height:140px;background:#f0f4f8;border-radius:8px;margin-bottom:12px;overflow:hidden;position:relative;">
+                  <svg width="100%" height="100%" viewBox="0 0 320 140" fill="none">
+                    <!-- bg -->
+                    <rect width="320" height="140" fill="#eef2f7"/>
+                    <!-- phone frame -->
+                    <rect x="100" y="10" width="120" height="120" rx="10" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+                    <!-- phone top bar -->
+                    <rect x="100" y="10" width="120" height="22" rx="10" fill="#f3f4f6"/>
+                    <rect x="100" y="22" width="120" height="10" fill="#f3f4f6"/>
+                    <!-- avatar circle -->
+                    <circle cx="116" cy="21" r="6" fill="#3b82f6"/>
+                    <!-- brand name text line -->
+                    <rect x="126" y="18" width="50" height="4" rx="2" fill="#d1d5db"/>
+                    <!-- image area in post -->
+                    <rect x="108" y="36" width="104" height="58" rx="4" fill="#cbd5e1"/>
+                    <!-- image representation: layered colored blocks -->
+                    <rect x="108" y="36" width="104" height="58" rx="4" fill="url(#imgGrad1)"/>
+                    <!-- image icon overlay -->
+                    <rect x="130" y="50" width="26" height="20" rx="3" fill="white" opacity="0.35"/>
+                    <path d="M136 63 l5-6 4 5 3-3 5 6z" fill="white" opacity="0.6"/>
+                    <circle cx="137" cy="56" r="2.5" fill="white" opacity="0.7"/>
+                    <!-- caption lines -->
+                    <rect x="108" y="100" width="70" height="4" rx="2" fill="#e2e8f0"/>
+                    <rect x="108" y="108" width="50" height="4" rx="2" fill="#e2e8f0"/>
+                    <!-- reaction row -->
+                    <circle cx="114" cy="123" r="3" fill="#3b82f6" opacity="0.5"/>
+                    <circle cx="122" cy="123" r="3" fill="#10b981" opacity="0.5"/>
+                    <circle cx="130" cy="123" r="3" fill="#f59e0b" opacity="0.5"/>
+                    <!-- small thumbnail bottom-left -->
+                    <rect x="22" y="60" width="54" height="40" rx="6" fill="#cbd5e1" stroke="white" stroke-width="2"/>
+                    <rect x="22" y="60" width="54" height="40" rx="6" fill="url(#imgGrad2)"/>
+                    <!-- 20+ badge -->
+                    <circle cx="63" cy="62" r="10" fill="#3b82f6"/>
+                    <text x="63" y="66" text-anchor="middle" font-size="8" fill="white" font-weight="bold">20+</text>
+                    <!-- arrow from thumbnail to phone -->
+                    <path d="M80 80 Q90 75 99 65" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-dasharray="3,2" marker-end="url(#arr1)"/>
                     <defs>
-                      <linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#d4a574;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#8b6f47;stop-opacity:1" />
+                      <linearGradient id="imgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#bfdbfe"/>
+                        <stop offset="100%" stop-color="#6366f1"/>
+                      </linearGradient>
+                      <linearGradient id="imgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ddd6fe"/>
+                        <stop offset="100%" stop-color="#3b82f6"/>
                       </linearGradient>
                     </defs>
-                    <rect x="20" y="20" width="70" height="140" rx="4" fill="url(#wood)" opacity="0.9"/>
-                    <rect x="30" y="30" width="50" height="8" fill="#f5f5f5" opacity="0.6"/>
-                    <rect x="30" y="50" width="50" height="40" fill="#e8e4d8" opacity="0.7"/>
-                    <rect x="105" y="15" width="85" height="150" rx="4" fill="#c9a676" opacity="0.8"/>
-                    <circle cx="145" cy="60" r="20" fill="#d4a574" opacity="0.6"/>
-                    <circle cx="145" cy="60" r="15" fill="#f0e6d2" opacity="0.4"/>
-                    <rect x="185" y="40" width="95" height="120" rx="4" fill="#d9b896"/>
-                    <circle cx="220" cy="75" r="18" fill="#e8d5c4" opacity="0.8"/>
-                    <ellipse cx="220" cy="75" rx="12" ry="16" fill="#f5f1ed" opacity="0.5"/>
-                    <rect x="185" y="50" width="95" height="3" fill="#f5f5f5" opacity="0.4"/>
                   </svg>
                 </div>
                 <div class="mb-3">
@@ -504,24 +533,47 @@
               </div>
               <!-- Feature 2 -->
               <div class="feature-card" style="padding:16px;--accent:#8b5cf6;display:flex;flex-direction:column;">
-                <div style="height:120px;background:linear-gradient(135deg, #f5deb3 0%, #d4a574 50%, #8b7355 100%);border-radius:8px;margin-bottom:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;">
-                  <svg style="width:100%;height:100%;position:absolute;" fill="none" viewBox="0 0 300 180">
+                <!-- Evergreen queue: tall phone with lifestyle image + recycle indicator -->
+                <div style="height:140px;background:#faf5ff;border-radius:8px;margin-bottom:12px;overflow:hidden;position:relative;">
+                  <svg width="100%" height="100%" viewBox="0 0 320 140" fill="none">
+                    <rect width="320" height="140" fill="#f5f0ff"/>
+                    <!-- Tall phone (portrait) -->
+                    <rect x="95" y="6" width="80" height="128" rx="10" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <!-- phone notch -->
+                    <rect x="115" y="9" width="40" height="5" rx="2.5" fill="#e9d5ff"/>
+                    <!-- tall lifestyle image in phone - warm tones (candle/product) -->
+                    <rect x="102" y="18" width="66" height="90" rx="3" fill="url(#evGrad1)"/>
+                    <!-- candle silhouette on image -->
+                    <rect x="127" y="35" width="16" height="40" rx="3" fill="white" opacity="0.25"/>
+                    <ellipse cx="135" cy="35" rx="8" ry="4" fill="white" opacity="0.2"/>
+                    <rect x="134" y="28" width="2" height="8" rx="1" fill="#fbbf24" opacity="0.6"/>
+                    <!-- second smaller image peek behind phone -->
+                    <rect x="55" y="30" width="52" height="70" rx="8" fill="url(#evGrad2)" stroke="white" stroke-width="2"/>
+                    <!-- recycle arrows connecting -->
+                    <path d="M87 55 Q91 45 95 40" stroke="#8b5cf6" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M93 38 L95 44 L89 43" fill="#8b5cf6"/>
+                    <!-- third image peek right side -->
+                    <rect x="175" y="35" width="50" height="65" rx="8" fill="url(#evGrad3)" stroke="white" stroke-width="2"/>
+                    <path d="M225 75 Q229 85 225 95" stroke="#8b5cf6" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M222 93 L225 99 L228 93" fill="#8b5cf6"/>
+                    <!-- bottom info bar -->
+                    <rect x="102" y="112" width="66" height="16" rx="2" fill="#f3f4f6"/>
+                    <rect x="106" y="116" width="30" height="4" rx="2" fill="#d1d5db"/>
                     <defs>
-                      <linearGradient id="beige" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#e8d5c4;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#c9945f;stop-opacity:1" />
+                      <linearGradient id="evGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f0c070"/>
+                        <stop offset="50%" stop-color="#d4845a"/>
+                        <stop offset="100%" stop-color="#7c4f3a"/>
+                      </linearGradient>
+                      <linearGradient id="evGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f5d9c0"/>
+                        <stop offset="100%" stop-color="#c9845a"/>
+                      </linearGradient>
+                      <linearGradient id="evGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ffe0c0"/>
+                        <stop offset="100%" stop-color="#d47840"/>
                       </linearGradient>
                     </defs>
-                    <rect x="30" y="40" width="60" height="110" rx="3" fill="url(#beige)" opacity="0.85"/>
-                    <circle cx="50" cy="65" r="15" fill="#d4a574" opacity="0.5"/>
-                    <rect x="60" y="35" width="65" height="115" rx="3" fill="#d9b896" opacity="0.8"/>
-                    <rect x="65" y="50" width="55" height="70" fill="#f0e6d2" opacity="0.6"/>
-                    <circle cx="90" cy="70" r="12" fill="#e8d5c4" opacity="0.4"/>
-                    <rect x="135" y="30" width="70" height="125" rx="3" fill="#c9a676" opacity="0.9"/>
-                    <rect x="145" y="45" width="50" height="85" fill="#d9b896" opacity="0.7"/>
-                    <ellipse cx="170" cy="70" rx="16" ry="20" fill="#f5f1ed" opacity="0.5"/>
-                    <circle cx="170" cy="70" r="8" fill="#e8d5c4" opacity="0.3"/>
-                    <path d="M 50 50 Q 90 45 130 52" stroke="#c9945f" stroke-width="1.5" opacity="0.3" fill="none"/>
                   </svg>
                 </div>
                 <div class="mb-3">
@@ -534,28 +586,52 @@
               </div>
               <!-- Feature 3 -->
               <div class="feature-card" style="padding:16px;--accent:#10b981;display:flex;flex-direction:column;">
-                <div style="height:120px;background:linear-gradient(135deg, #d4b5a0 0%, #a6826a 50%, #7a5c45 100%);border-radius:8px;margin-bottom:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;">
-                  <svg style="width:100%;height:100%;position:absolute;" fill="none" viewBox="0 0 300 180">
+                <!-- Recurring posts: two phones with circular arrows between -->
+                <div style="height:140px;background:#f0fdf4;border-radius:8px;margin-bottom:12px;overflow:hidden;position:relative;">
+                  <svg width="100%" height="100%" viewBox="0 0 320 140" fill="none">
+                    <rect width="320" height="140" fill="#ecfdf5"/>
+                    <!-- Left phone -->
+                    <rect x="38" y="18" width="90" height="104" rx="9" fill="white" stroke="#d1fae5" stroke-width="1.5"/>
+                    <rect x="38" y="18" width="90" height="20" rx="9" fill="#f0fdf4"/>
+                    <rect x="38" y="28" width="90" height="10" fill="#f0fdf4"/>
+                    <circle cx="53" cy="28" r="5" fill="#10b981" opacity="0.5"/>
+                    <rect x="61" y="25" width="35" height="4" rx="2" fill="#d1fae5"/>
+                    <!-- image in left phone -->
+                    <rect x="46" y="42" width="74" height="52" rx="3" fill="url(#rpGrad1)"/>
+                    <!-- product on image: serum bottle silhouette -->
+                    <rect x="76" y="50" width="10" height="30" rx="4" fill="white" opacity="0.3"/>
+                    <ellipse cx="81" cy="50" rx="6" ry="3" fill="white" opacity="0.2"/>
+                    <rect x="78" y="45" width="6" height="6" rx="2" fill="#f0fdfa" opacity="0.25"/>
+                    <!-- caption lines -->
+                    <rect x="46" y="99" width="45" height="3" rx="1.5" fill="#d1fae5"/>
+                    <rect x="46" y="106" width="30" height="3" rx="1.5" fill="#d1fae5"/>
+                    <!-- circular arrow in the middle -->
+                    <path d="M 142 55 A 18 18 0 1 1 142 85" stroke="#10b981" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <path d="M138 52 L143 58 L148 52" stroke="#10b981" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <!-- Right phone -->
+                    <rect x="192" y="18" width="90" height="104" rx="9" fill="white" stroke="#d1fae5" stroke-width="1.5"/>
+                    <rect x="192" y="18" width="90" height="20" rx="9" fill="#f0fdf4"/>
+                    <rect x="192" y="28" width="90" height="10" fill="#f0fdf4"/>
+                    <circle cx="207" cy="28" r="5" fill="#10b981" opacity="0.5"/>
+                    <rect x="215" y="25" width="35" height="4" rx="2" fill="#d1fae5"/>
+                    <!-- image in right phone -->
+                    <rect x="200" y="42" width="74" height="52" rx="3" fill="url(#rpGrad2)"/>
+                    <!-- product: different angle of serum -->
+                    <rect x="228" y="52" width="10" height="28" rx="4" fill="white" opacity="0.3"/>
+                    <ellipse cx="233" cy="52" rx="6" ry="3" fill="white" opacity="0.2"/>
+                    <!-- caption lines -->
+                    <rect x="200" y="99" width="45" height="3" rx="1.5" fill="#d1fae5"/>
+                    <rect x="200" y="106" width="30" height="3" rx="1.5" fill="#d1fae5"/>
                     <defs>
-                      <linearGradient id="natural" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#d9b896;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#8b6f47;stop-opacity:1" />
+                      <linearGradient id="rpGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#d4c5a9"/>
+                        <stop offset="100%" stop-color="#8b7355"/>
+                      </linearGradient>
+                      <linearGradient id="rpGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#c9b89a"/>
+                        <stop offset="100%" stop-color="#7a6347"/>
                       </linearGradient>
                     </defs>
-                    <rect x="25" y="25" width="90" height="130" rx="4" fill="url(#natural)" opacity="0.9"/>
-                    <line x1="35" y1="35" x2="105" y2="35" stroke="#f5f5f5" stroke-width="2" opacity="0.4"/>
-                    <circle cx="70" cy="60" r="8" fill="#e8d5c4" opacity="0.5"/>
-                    <rect x="40" y="75" width="60" height="3" fill="#f5f1ed" opacity="0.5"/>
-                    <rect x="40" y="85" width="60" height="3" fill="#f5f1ed" opacity="0.5"/>
-                    <rect x="40" y="95" width="40" height="3" fill="#f5f1ed" opacity="0.5"/>
-                    <rect x="130" y="30" width="85" height="130" rx="4" fill="#d4a574" opacity="0.85"/>
-                    <circle cx="165" cy="70" r="18" fill="#f0e6d2" opacity="0.6"/>
-                    <ellipse cx="165" cy="70" rx="10" ry="14" fill="#e8d5c4" opacity="0.3"/>
-                    <rect x="140" y="100" width="65" height="50" fill="#c9945f" opacity="0.4"/>
-                    <rect x="225" y="35" width="65" height="125" rx="4" fill="#c9a676" opacity="0.8"/>
-                    <rect x="235" y="50" width="45" height="70" fill="#d9b896" opacity="0.6"/>
-                    <circle cx="260" cy="80" r="15" fill="#e8d5c4" opacity="0.4"/>
-                    <path d="M 70 30 Q 120 45 165 70" stroke="#c9945f" stroke-width="1.5" opacity="0.2" fill="none" stroke-dasharray="3"/>
                   </svg>
                 </div>
                 <div class="mb-3">
@@ -568,25 +644,35 @@
               </div>
               <!-- Feature 4 -->
               <div class="feature-card" style="padding:16px;--accent:#f59e0b;display:flex;flex-direction:column;">
-                <div style="height:120px;background:linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);border-radius:8px;margin-bottom:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;">
-                  <svg style="width:100%;height:100%;position:absolute;" fill="none" viewBox="0 0 300 180">
+                <!-- RSS feed: product card like pottery set reference -->
+                <div style="height:140px;background:#1c1917;border-radius:8px;margin-bottom:12px;overflow:hidden;position:relative;">
+                  <svg width="100%" height="100%" viewBox="0 0 320 140" fill="none">
+                    <rect width="320" height="140" fill="#1c1917"/>
+                    <!-- product image area (dark bg, muted product) -->
+                    <rect x="0" y="0" width="320" height="95" fill="url(#rssImgGrad)"/>
+                    <!-- three pottery/vase shapes -->
+                    <rect x="85" y="30" width="22" height="55" rx="5" fill="#5c4033" opacity="0.85"/>
+                    <ellipse cx="96" cy="30" rx="12" ry="5" fill="#6b4c3b" opacity="0.8"/>
+                    <rect x="128" y="20" width="28" height="68" rx="6" fill="#4a3728" opacity="0.9"/>
+                    <ellipse cx="142" cy="20" rx="14" ry="6" fill="#5c4033" opacity="0.85"/>
+                    <rect x="172" y="35" width="22" height="50" rx="5" fill="#5c4033" opacity="0.8"/>
+                    <ellipse cx="183" cy="35" rx="11" ry="4.5" fill="#6b4c3b" opacity="0.75"/>
+                    <!-- bottom info bar (white card) -->
+                    <rect x="0" y="95" width="320" height="45" fill="white"/>
+                    <!-- product title -->
+                    <text x="16" y="113" font-size="11" font-weight="bold" fill="#111827">Post title</text>
+                    <!-- best seller badge -->
+                    <rect x="80" y="103" width="54" height="14" rx="3" fill="#fef3c7"/>
+                    <text x="107" y="113" text-anchor="middle" font-size="8" fill="#d97706" font-weight="bold">Best Seller</text>
+                    <!-- price -->
+                    <text x="16" y="130" font-size="9" fill="#9ca3af" text-decoration="line-through">$49.99</text>
+                    <text x="46" y="130" font-size="10" font-weight="bold" fill="#111827">$25.99</text>
                     <defs>
-                      <linearGradient id="dark" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#4a4a4a;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                      <linearGradient id="rssImgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#2c2018"/>
+                        <stop offset="100%" stop-color="#1a1210"/>
                       </linearGradient>
                     </defs>
-                    <rect width="300" height="180" fill="#1a1a1a"/>
-                    <rect x="15" y="15" width="130" height="150" rx="6" fill="url(#dark)" opacity="0.9"/>
-                    <rect x="25" y="25" width="110" height="70" fill="#d4a574" opacity="0.7"/>
-                    <rect x="25" y="105" width="110" height="50" fill="#666666" opacity="0.8"/>
-                    <text x="30" y="140" font-size="8" fill="#f5f5f5" opacity="0.8">Product</text>
-                    <rect x="155" y="15" width="130" height="150" rx="6" fill="url(#dark)" opacity="0.9"/>
-                    <rect x="165" y="25" width="110" height="70" fill="#8b7355" opacity="0.7"/>
-                    <circle cx="220" cy="55" r="15" fill="#a6826a" opacity="0.6"/>
-                    <rect x="165" y="105" width="110" height="50" fill="#4a4a4a" opacity="0.8"/>
-                    <text x="170" y="140" font-size="8" fill="#f5f5f5" opacity="0.8">Featured</text>
-                    <rect x="15" y="170" width="280" height="0" fill="white" opacity="0.1"/>
                   </svg>
                 </div>
                 <div class="mb-3">
